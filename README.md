@@ -10,7 +10,7 @@ I programmed Snake to run on the DE10-Lite's processor-based lab setup and rende
 
 The game includes a moving snake, randomly positioned food, fixed obstacles, collision detection, progressive growth and speed, current/high-score tracking, and distinct win/loss screens.
 
-> **Demo:** I recorded the game running on the lab monitor, including gameplay and the red game-over display. Selected video stills and a short highlight clip are being prepared for this repository.
+> **Demonstrated on hardware:** The game runs on the DE10-Lite lab setup, with physical pushbutton control, live VGA gameplay, obstacle navigation, and a red game-over screen shown in the recorded demonstration.
 
 ## How the hardware and software interact
 
@@ -90,7 +90,7 @@ This is **hardware-specific source**, not a desktop game. To compile and run it,
 - Address and geometry definitions including `FPGA_PIXEL_BUF_BASE`, `KEY_BASE`, `HEX3_HEX0_BASE`, `MAX_X`, `MAX_Y`, and `YSHIFT`
 - A suitable Nios V software build/upload workflow for the configured lab system
 
-Those board-specific support files are **not included** here; this repository contains the original application source and explanation, rather than a standalone, one-command build. The video documents the program operating in the configured university lab environment.
+The source targets the configured university DE10-Lite lab environment; it is not a standalone desktop executable.
 
 ## Engineering takeaways
 
@@ -105,6 +105,10 @@ Those board-specific support files are **not included** here; this repository co
 - Separate hardware access from game logic to make the gameplay testable on a desktop
 - Improve timing by replacing busy-wait delays with a timer peripheral
 - Add more robust score handling and additional difficulty modes
+
+## Verification notes
+
+The game was demonstrated running on the DE10-Lite with a VGA monitor. This repository preserves the application source; compiling it again requires the original Nios V lab hardware configuration and board-support header, which are not included. Demo images/video can be added to the prepared `assets/` folder.
 
 ---
 
