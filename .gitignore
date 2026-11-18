@@ -1,0 +1,15 @@
+# Embedded build artifacts
+*.o
+*.elf
+*.map
+*.hex
+*.bin
+*.obj
+*.out
+
+# IDE and temporary files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
